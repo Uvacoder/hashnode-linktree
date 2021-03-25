@@ -3,7 +3,7 @@ import TextField from "@material-ui/core/TextField";
 import { useHistory } from "react-router-dom";
 
 const Home = () => {
-  const [username, setUsername] = useState("S");
+  const [username, setUsername] = useState("");
   const history = useHistory();
 
   const getLinkTree = (e) => {
