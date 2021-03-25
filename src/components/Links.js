@@ -1,11 +1,16 @@
+import { Button } from "@material-ui/core";
 import React from "react";
 
 const Link = ({ linkTitle, linkIcon, link }) => {
   return (
-    <a href={link} target="_blank" className="link flex">
+    <Button
+      variant="contained"
+      className="link"
+      onClick={() => window.open(link)}
+    >
       <h3>{linkTitle}</h3>
       <i className={`bx ${linkIcon}`}></i>
-    </a>
+    </Button>
   );
 };
 

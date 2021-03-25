@@ -79,12 +79,13 @@
 }
 .link {
   width: 90%;
-  background: #fff;
-  padding: 13px 0;
-  border-radius: 5px;
+  background: #fff !important;
+  text-transform: none !important;
+  padding: 13px 0 !important;
+  border-radius: 5px !important;
   transition: 0.5s;
-  box-shadow: 0 10px 40px -10px rgb(0 64 128 / 10%);
-  margin: 5px 0;
+  box-shadow: 0 10px 40px -10px rgb(0 64 128 / 10%) !important;
+  margin: 5px 0 !important;
 }
 .link h3 {
   margin-right: 5px;
