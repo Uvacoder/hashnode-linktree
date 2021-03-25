@@ -4,6 +4,7 @@ import BEST_STORY from "./query";
 import { useParams } from "react-router-dom";
 import Header from "./components/Header";
 import Link from "./components/Links";
+import Footer from "./components/Footer";
 
 const Main = () => {
   let params = useParams();
@@ -15,7 +16,6 @@ const Main = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Something went wrong</p>;
   if (data) {
-    console.log(data);
     return (
       <div className="main flex">
         <Header name={data.user.name} profileImg={data.user.photo} />
@@ -69,6 +69,7 @@ const Main = () => {
             link={data.user.socialMedia.website}
           />
         )}
+        <Footer />
       </div>
     );
   }
