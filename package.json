@@ -1,9 +1,11 @@
 {
-  "name": "graphql-react",
+  "name": "hashtree",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.3.9",
+    "@material-ui/core": "4.11.3",
+    "@material-ui/icons": "4.11.2",
     "@octokit/graphql": "^4.6.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -11,6 +13,7 @@
     "graphql": "^15.5.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "5.2.0",
     "react-scripts": "4.0.2",
     "web-vitals": "^1.1.0"
   },
@@ -37,5 +40,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "keywords": [],
+  "description": ""
 }

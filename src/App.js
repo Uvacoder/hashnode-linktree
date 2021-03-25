@@ -1,23 +1,22 @@
 import React from "react";
-import { useQuery } from "@apollo/client";
-import BEST_STORY from "./query";
-import { graphql } from "@octokit/graphql";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Main from "./Main";
+import "./styles/App.css";
 
 const App = () => {
-  const username = "sandeep";
-  const { loading, error, data } = useQuery(BEST_STORY, {
-    variables: { username },
-  });
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Something went wrong</p>;
-  if (data) {
-    console.log(data);
-    return (
-      <div>
-        <h1>Hashnode</h1>
-      </div>
-    );
-  }
+  return (
+    <Router>
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/:username" exact>
+          <Main />
+        </Route>
+      </Switch>
+    </Router>
+  );
 };
 
 export default App;
