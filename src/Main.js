@@ -24,7 +24,11 @@ const Main = () => {
   if (data) {
     return (
       <div className={`main flex ${theme}`}>
-        <Header name={data.user.name} profileImg={data.user.photo} />
+        <Header
+          name={data.user.name}
+          profileImg={data.user.photo}
+          tagline={data.user.tagline}
+        />
 
         <div className="helper flex">
           {data.user.socialMedia.twitter && (
