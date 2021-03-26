@@ -18,13 +18,13 @@ const Home = () => {
 
   return (
     <div className="home flex">
-      <div className="home__left flex">
+      <div className="home__left flex animate__animated animate__fadeInLeft">
         <h1>
           Indroducing <span>HashTree</span>
         </h1>
         <p>A link tree for all Hashnode users ✌</p>
       </div>
-      <div className="home__right flex">
+      <div className="home__right flex animate__animated animate__fadeInRight">
         <div className="form">
           <TextField
             label="Hashnode Username"
