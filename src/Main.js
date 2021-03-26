@@ -14,7 +14,12 @@ const Main = () => {
   const { loading, error, data } = useQuery(BEST_STORY, {
     variables: { username }
   });
-  if (loading) return <p>Loading...</p>;
+  if (loading)
+    return (
+      <div className="loader flex">
+        <div class="spinner"></div>
+      </div>
+    );
   if (error) return <p>Something went wrong</p>;
   if (data) {
     return (
