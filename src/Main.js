@@ -10,6 +10,7 @@ const Main = () => {
   let params = useParams();
 
   const username = params.username;
+  const theme = params.theme;
   const { loading, error, data } = useQuery(BEST_STORY, {
     variables: { username }
   });
@@ -17,7 +18,7 @@ const Main = () => {
   if (error) return <p>Something went wrong</p>;
   if (data) {
     return (
-      <div className="main flex">
+      <div className={`main flex ${theme}`}>
         <Header name={data.user.name} profileImg={data.user.photo} />
 
         <div className="helper flex">

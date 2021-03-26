@@ -11,7 +11,7 @@ const App = () => {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/:username" exact>
+        <Route path="/:username/:theme" exact>
           <Main />
         </Route>
       </Switch>
