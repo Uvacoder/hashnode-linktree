@@ -161,7 +161,7 @@ a {
 }
 /* Themes */
 .default-white {
-  background: url(../assets/Liquid-Cheese.png);
+  background: url("https://raw.githubusercontent.com/saviomartin/hashtree/main/public/assets/Liquid-Cheese.png");
   background-size: cover;
 }
 .ocean-blue {
