@@ -16,7 +16,7 @@ const Main = () => {
   });
   if (loading)
     return (
-      <div className="loader flex">
+      <div className={`loader flex ${theme}`}>
         <div class="spinner"></div>
       </div>
     );

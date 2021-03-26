@@ -223,10 +223,21 @@ a {
   background-size: cover;
   width: 100%;
 }
+.default-white .spinner {
+  background: linear-gradient(to left, #4776e6, #8e54e9);
+}
+.ocean-blue .spinner {
+  background: linear-gradient(to top, #4776e6, #1cd8d2, #93edc7);
+}
+.stylish-yellow .spinner {
+  background: linear-gradient(to bottom, #f7ff00, #db36a4);
+}
+.rocket-green .spinner {
+  background: linear-gradient(to bottom, #7ed56f, #28b485);
+}
 .spinner {
   width: 50px;
   height: 50px;
-  background: linear-gradient(to left, #4776e6, #8e54e9);
   margin: 100px auto;
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
   animation: sk-rotateplane 1.2s infinite ease-in-out;
