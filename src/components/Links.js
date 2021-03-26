@@ -5,7 +5,7 @@ const Link = ({ linkTitle, linkIcon, link }) => {
   return (
     <Button
       variant="contained"
-      className="link"
+      className="link animate__animated animate__fadeInDown"
       onClick={() => window.open(link)}
     >
       <h3>{linkTitle}</h3>
