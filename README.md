@@ -1,4 +1,4 @@
-## Introducing Hashtree
+# Introducing Hashtree
 
 ![lap (1).gif](https://cdn.hashnode.com/res/hashnode/image/upload/v1616836819718/qbilljzSy.gif)
 
