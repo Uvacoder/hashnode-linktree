@@ -22,6 +22,7 @@ const Main = () => {
     );
   if (error) return <p>Something went wrong</p>;
   if (data) {
+    console.log(data);
     return (
       <div className={`main flex ${theme}`}>
         <Header

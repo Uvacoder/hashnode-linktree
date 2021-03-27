@@ -41,7 +41,7 @@ const Home = () => {
               onClick={() => setTheme("default-white")}
             >
               <div className="cover default-white"></div>
-              Default White
+              <p>Default White</p>
             </div>
             <div
               className={`theme ${
@@ -50,7 +50,7 @@ const Home = () => {
               onClick={() => setTheme("ocean-blue")}
             >
               <div className="cover ocean-blue"></div>
-              Ocean Blue
+              <p>Ocean Blue</p>
             </div>
             <div
               className={`theme ${
@@ -59,7 +59,7 @@ const Home = () => {
               onClick={() => setTheme("stylish-yellow")}
             >
               <div className="cover stylish-yellow"></div>
-              Stylish Yellow
+              <p>Stylish Yellow</p>
             </div>
             <div
               className={`theme ${
@@ -68,7 +68,7 @@ const Home = () => {
               onClick={() => setTheme("rocket-green")}
             >
               <div className="cover rocket-green"></div>
-              Rocket Green
+              <p>Rocket Green</p>
             </div>
           </div>
 
