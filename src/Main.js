@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import BEST_STORY from "./query";
+import USER from "./query";
 import { useParams } from "react-router-dom";
 import Header from "./components/Header";
 import Link from "./components/Links";
@@ -11,7 +11,7 @@ const Main = () => {
 
   const username = params.username;
   const theme = params.theme;
-  const { loading, error, data } = useQuery(BEST_STORY, {
+  const { loading, error, data } = useQuery(USER, {
     variables: { username }
   });
   if (loading)

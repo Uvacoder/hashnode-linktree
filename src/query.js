@@ -1,6 +1,6 @@
 import { gql } from "@apollo/client";
 
-const BEST_STORY = gql`
+const USER = gql`
   query($username: String!) {
     user(username: $username) {
       _id
@@ -21,4 +21,4 @@ const BEST_STORY = gql`
   }
 `;
 
-export default BEST_STORY;
+export default USER;
